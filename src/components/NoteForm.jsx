@@ -48,18 +48,7 @@ const NoteForm = ({ notes, setNotes }) => {
             </button>
             {isFormVisible &&
                 <form onSubmit={handleSubmit} className="mb-6">
-                    <div className="mb-4">
-                        <label htmlFor="title" className="block font-semibold">
-                            Title
-                        </label>
-                        <input
-                            name="title" 
-                            type="text" 
-                            className="w-full p-2 border rounded-lg"
-                            value={formData.title}
-                            onChange={handleChange} 
-                        />
-                    </div>
+                    
                     <div className="mb-4">
                         <label htmlFor="priority" className="block font-semibold">
                             Priority
